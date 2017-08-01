@@ -96,14 +96,14 @@
 <meta name="description" content="概述想要了解Android中的线程，绕不过的一个就是AsyncTask。">
 <meta name="keywords" content="android线程、AsyncTask、源码">
 <meta property="og:type" content="article">
-<meta property="og:title" content="看源码之能看多少看多少系列——AsyncTask源码">
+<meta property="og:title" content="看源码之能看多少看多少系列——AsyncTask篇">
 <meta property="og:url" content="http://yoursite.com/2017/07/31/android-source-asynctask/index.html">
 <meta property="og:site_name" content="一生要走多远的路程">
 <meta property="og:description" content="概述想要了解Android中的线程，绕不过的一个就是AsyncTask。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-07-31T09:35:37.000Z">
+<meta property="og:updated_time" content="2017-08-01T01:20:27.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="看源码之能看多少看多少系列——AsyncTask源码">
+<meta name="twitter:title" content="看源码之能看多少看多少系列——AsyncTask篇">
 <meta name="twitter:description" content="概述想要了解Android中的线程，绕不过的一个就是AsyncTask。">
 
 
@@ -138,7 +138,7 @@
 
 
 
-  <title>看源码之能看多少看多少系列——AsyncTask源码 | 一生要走多远的路程</title>
+  <title>看源码之能看多少看多少系列——AsyncTask篇 | 一生要走多远的路程</title>
   
 
 
@@ -284,7 +284,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">看源码之能看多少看多少系列——AsyncTask源码</h1>
+          <h1 class="post-title" itemprop="name headline">看源码之能看多少看多少系列——AsyncTask篇</h1>
         
 
         <div class="post-meta">
@@ -409,7 +409,7 @@
  <figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">boolean</span> <span class="title">cancel</span><span class="params">(<span class="keyword">boolean</span> mayInterruptIfRunning)</span> </span>&#123;</div><div class="line">	mCancelled.set(<span class="keyword">true</span>);</div><div class="line">	<span class="keyword">return</span> mFuture.cancel(mayInterruptIfRunning);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 </li>
 </ol>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h3 id="最后，当我看源代码时，我在看什么"><a href="#最后，当我看源代码时，我在看什么" class="headerlink" title="最后，当我看源代码时，我在看什么"></a>最后，当我看源代码时，我在看什么</h3>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><h3 id="当我看源代码时，我在看什么"><a href="#当我看源代码时，我在看什么" class="headerlink" title="当我看源代码时，我在看什么"></a>当我看源代码时，我在看什么</h3>
       
     </div>
 
@@ -460,6 +460,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/08/01/android-memory-overflow/" rel="prev" title="android-memory-overflow">
+                android-memory-overflow <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -534,7 +538,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -545,7 +549,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -556,7 +560,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">1</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -591,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AsyncTask的简单使用"><span class="nav-number">2.</span> <span class="nav-text">AsyncTask的简单使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AsyncTask的代码"><span class="nav-number">3.</span> <span class="nav-text">AsyncTask的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#最后，当我看源代码时，我在看什么"><span class="nav-number">5.</span> <span class="nav-text">最后，当我看源代码时，我在看什么</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#概述"><span class="nav-number">1.</span> <span class="nav-text">概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AsyncTask的简单使用"><span class="nav-number">2.</span> <span class="nav-text">AsyncTask的简单使用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#AsyncTask的代码"><span class="nav-number">3.</span> <span class="nav-text">AsyncTask的代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#总结"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#当我看源代码时，我在看什么"><span class="nav-number">5.</span> <span class="nav-text">当我看源代码时，我在看什么</span></a></li></ol></div>
             
 
           </div>
