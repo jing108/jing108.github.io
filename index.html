@@ -356,16 +356,14 @@
 
       
         
-          
-            <p>用户空间的两个进程想要通信，可行的方式就是借用内核空间。</p>
-<p>Binder就是使用虚拟设备“binder”来转发用户空间进程间传递的消息。</p>
-<p>Binder有四个部分：binder驱动、ServiceManager、Client、Server</p>
-<p>用户进程通过ioctl函数调用Binder驱动的功能。</p>
-<p>函数ioctl有个参数是Handle，Binder驱动就是根据这个Handle确定向哪个进程发送消息。</p>
-<p>ServiceManager的Handle为0。</p>
-<p>Client首先需要获取ServiceManager，也就是获取Handle为0的远程代理对象BpBinder，通过ServiceManager获取想要的Service的Handle，然后根据Handle通过ioctl就可以与远程的Service通信。</p>
-
-          
+          <p>用户空间的两个进程想要通信，可行的方式就是借用内核空间。</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/08/23/binder-learn-summary/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
